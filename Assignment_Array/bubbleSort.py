@@ -1,0 +1,21 @@
+# Method Implementation using BUBBLE SORT
+
+def bubbleSort(arr):    
+    n = len(arr)
+    for i in range(n-1):
+        for j in range(0, n-i-1):
+
+            if arr[j] > arr[j+1]:
+
+                #Swap both element
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+            
+
+# Driver code
+arr = [70, 20, 50, 60, 35, 47]
+result = bubbleSort(arr)
+print(result)
+
+
+
